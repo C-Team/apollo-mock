@@ -36,7 +36,7 @@ public class ApolloMock {
 					} else if (length == -1) {
 						// Connection closed
 						System.out.println("Client closed connection");
-						return;
+						break;
 					} else {
 						// Other data, just log it
 						byte[] data = Arrays.copyOfRange(buffer, 0, length);
